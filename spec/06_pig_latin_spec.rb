@@ -44,6 +44,7 @@ describe "#translate" do
     expect(s).to eq("ietquay")
   end
 
+  #JBV : cf. begin_w_consonant_then_qu
   it "counts 'qu' as a consonant even when it's preceded by a consonant" do
     s = translate("square")
     expect(s).to eq("aresquay")
@@ -57,5 +58,7 @@ describe "#translate" do
   # Test-driving bonus:
   # * write a test asserting that capitalized words are still capitalized (but with a different initial capital letter, of course)
   # * retain the punctuation from the original phrase
+  # 
+  # JBV : maybe another day ;-)
 
 end
